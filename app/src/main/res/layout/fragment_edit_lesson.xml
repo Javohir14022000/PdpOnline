@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".EditLessonFragment">
+
+    <TextView
+        android:id="@+id/title_settingss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:text="1-Dars"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_settingss">
+
+        <EditText
+            android:id="@+id/lesson_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E4E1E1"
+            android:hint="Dars nomi" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginVertical="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayout">
+
+        <EditText
+            android:id="@+id/lesson_info_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E4E1E1"
+            android:textColor="@color/black"
+            android:hint="Dars dars bo’yicha ma’lumot" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayout3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayout2">
+
+        <EditText
+            android:id="@+id/lesson_number_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:background="#E4E1E1"
+            android:hint="Dars o'rni" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.loopeer.shadow.ShadowView
+        android:layout_marginTop="10dp"
+        android:id="@+id/card_add_btn1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="5dp"
+        app:backgroundColor="#814FDA"
+        app:cornerRadius="35dp"
+        app:foregroundColor="@color/white"
+        app:shadowColor="#BB9FED"
+        app:shadowDy="20"
+        app:shadowMarginBottom="10dp"
+        app:shadowMarginLeft="10dp"
+        app:shadowMarginRight="10dp"
+        app:shadowRadius="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayout3">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="5dp"
+        app:cardCornerRadius="22dp"
+        app:layout_gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+       >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_settings" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/done_24" />
+    </androidx.cardview.widget.CardView>
+    </com.loopeer.shadow.ShadowView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

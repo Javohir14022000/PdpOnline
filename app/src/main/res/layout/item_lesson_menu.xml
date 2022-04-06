@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="7dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.loopeer.shadow.ShadowView
+        android:id="@+id/allshw"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="5dp"
+        app:backgroundColor="#80F4B63C"
+        app:cornerRadius="50dp"
+        app:foregroundColor="@color/white"
+        app:shadowColor="#80F4B63C"
+        app:shadowDy="20"
+        app:shadowMarginBottom="10dp"
+        app:shadowMarginLeft="10dp"
+        app:shadowMarginRight="10dp"
+        app:shadowRadius="5dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:id="@+id/card_enter"
+        android:layout_height="80dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="5dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_modul" />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lesson_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/modul_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Dars"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </com.loopeer.shadow.ShadowView>
+</LinearLayout>

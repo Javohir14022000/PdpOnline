@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.pdponline.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.pdponline.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_courseListFragment"
+            app:destination="@id/courseListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.pdponline.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_editCourseFragment"
+            app:destination="@id/editCourseFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_addModulFragment"
+            app:destination="@id/addModulFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editCourseFragment"
+        android:name="com.example.pdponline.EditCourseFragment"
+        android:label="fragment_edit_course"
+        tools:layout="@layout/fragment_edit_course" />
+    <fragment
+        android:id="@+id/addModulFragment"
+        android:name="com.example.pdponline.AddModulFragment"
+        android:label="fragment_add_modul"
+        tools:layout="@layout/fragment_add_modul" >
+        <action
+            android:id="@+id/action_addModulFragment_to_editModulFragment"
+            app:destination="@id/editModulFragment" />
+        <action
+            android:id="@+id/action_addModulFragment_to_lessonFragment"
+            app:destination="@id/lessonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editModulFragment"
+        android:name="com.example.pdponline.EditModulFragment"
+        android:label="fragment_edit_modul"
+        tools:layout="@layout/fragment_edit_modul" />
+    <fragment
+        android:id="@+id/lessonFragment"
+        android:name="com.example.pdponline.LessonFragment"
+        android:label="fragment_lesson"
+        tools:layout="@layout/fragment_lesson" >
+        <action
+            android:id="@+id/action_lessonFragment_to_editLessonFragment"
+            app:destination="@id/editLessonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editLessonFragment"
+        android:name="com.example.pdponline.EditLessonFragment"
+        android:label="fragment_edit_lesson"
+        tools:layout="@layout/fragment_edit_lesson" />
+    <fragment
+        android:id="@+id/courseListFragment"
+        android:name="com.example.pdponline.CourseListFragment"
+        android:label="fragment_course_list"
+        tools:layout="@layout/fragment_course_list" >
+        <action
+            android:id="@+id/action_courseListFragment_to_lessonListFragment"
+            app:destination="@id/lessonListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lessonListFragment"
+        android:name="com.example.pdponline.LessonListFragment"
+        android:label="fragment_lesson_list"
+        tools:layout="@layout/fragment_lesson_list" >
+        <action
+            android:id="@+id/action_lessonListFragment_to_aboutLessonFragment"
+            app:destination="@id/aboutLessonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutLessonFragment"
+        android:name="com.example.pdponline.AboutLessonFragment"
+        android:label="fragment_about_lesson"
+        tools:layout="@layout/fragment_about_lesson" />
+</navigation>

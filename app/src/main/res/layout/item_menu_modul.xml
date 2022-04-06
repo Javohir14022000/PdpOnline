@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="130dp"
+    android:layout_height="80dp"
+    android:layout_marginTop="15dp">
+
+    <com.loopeer.shadow.ShadowView
+        android:id="@+id/allshw"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:elevation="5dp"
+        app:backgroundColor="#80F4B63C"
+        app:cornerRadius="10dp"
+        app:foregroundColor="@color/white"
+        app:shadowColor="#80F4B63C"
+        app:shadowDy="20"
+        app:shadowMarginBottom="10dp"
+        app:shadowMarginLeft="10dp"
+        app:shadowMarginRight="10dp"
+        app:shadowRadius="5dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back_modul" />
+
+        <TextView
+            android:id="@+id/modul_name"
+            android:layout_width="109dp"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:paddingHorizontal="5dp"
+            android:layout_marginTop="4dp"
+            android:text="Kotlin Basic"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+    </com.loopeer.shadow.ShadowView>
+
+
+
+
+
+
+</LinearLayout>
